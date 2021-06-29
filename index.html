@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset = 'utf-8'>
-    <meta name = 'viewport' content = 'width = device-width, initial-scale= 1'>
-    <title>Document</title>
-    <style>
-        .media {
-            background-color: blue;
-        }
-        @media screen and (min-width: 480px) {
-            .media {
-                background-color: red;
-            }
-        }
-        @media screen and (min-width: 640px) {
-            .media {
-                background-color: green;
-            }
-        }
-        #responsive-img {
-            height: auto;
-            width: 50vw;
-        }
-        a {
-            display:block;
-        }
-        a:link {
-            color: black;
-        }
-        a:visited {
-            color: red;
-        }
-        a:hover {
-            background-color: yellow;
-        }
-        a:active {
-            background-color: blue;
-        }
-        input:focus {
-            background-color: skyblue;
-        }
-        h1:hover {
-            filter: drop-shadow(5px 3px 4px lime);
-        }
-        div h1:first-child {
-            background-color: green;
-        }
-        div h1:last-child {
-            background-color: green;        
-        }
-        
-    </style>
+    <meta charset="UTF-8">
+    <title>HTML/CSSの学習</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div>
-        <h1>Hoge</h1>
-        <h1>Fuga</h1>
-        <h1>Foo</h1>
-        <h1>Bar</h1>
+    <div id = 'header'>
+        <h1><a href="index.html">
+            <img id = 'corridor' src = 'images/corridor.jpg' alt = '大学の廊下' />
+            </a>
+        </h1>
     </div>
-    <img src="images/hoge.png" id = 'responsive-img'>
-    <a href = "hoge.html">Link</a>
-    <a id = 'blog' href = 'https://www.sejuku.net/blog/'>SAMURAI ENGINEER BLOG</a>
-    <input type="text" name="write yourname"/>
-    <div class = 'media'>
-        <h3>メディアクエリ</h3>
+    <div id = 'wrapper'>
+        <div id = 'nav'>
+            <ul>
+                <li><a href = 'home.html'>ナビ1</a></li>
+                <li><a href = '#'>ナビ2</a></li>
+                <li><a href = '#'>ナビ3</a></li>
+                <li><a href = '#'>ナビ4</a></li>
+                <li><a href = '#'>ナビ5</a></li>
+            </ul>
+        </div>
+        <div id = 'container'>
+            <div id = 'main'>
+                <div class = 'post'>
+                    <p>sentences</p>
+                </div>
+                <div class = 'post clearfix'>
+                    <h2>small sentences1</h2>
+                    <img class = 'left' src = 'images/classroom.jpg' alt = 'landscape' />
+                    <p>
+                        コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
+                        コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
+                    </p>
+                    <p class = 'contentspage'><a href = '#'>to contents1 page</a></p>
+                </div>
+                <div class = 'post clearfix'>
+                    <h2>small sentences2</h2>
+                    <img class = 'right' src = 'images/scale.jpg' alt = 'Balance' />
+                    <p>
+                        コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
+                        コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
+                    </p>
+                </div>
+            </div>
+                <div id = 'side'>
+                    <div class = 'box'>
+                        <h2>side menu1</h2>
+                        <div class = 'boxBody'>
+                            <ul>
+                                <li>item1</li>
+                                <li>item2</li>
+                                <li>item3</li>
+                                <li>item4</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = 'box'>
+                        <h2>side menu2</h2>
+                        <div class = 'boxBody'>
+                            <ul>
+                                <li>item1</li>
+                                <li>item2</li>
+                                <li>item3</li>
+                                <li>item4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id = 'footer'>
+        <p>&copy; 20xx oo All Rights Reserved.</p>
     </div>
 </body>
 </html>
